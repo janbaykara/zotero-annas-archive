@@ -230,7 +230,7 @@ async function fastDownloadUrl(
       continue;
     }
 
-    let hostname: string | null = null;
+    let hostname: string;
     try {
       hostname = new URL(parsed.url).hostname;
     } catch {

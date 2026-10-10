@@ -1,9 +1,6 @@
 import { config } from "../../package.json";
 import { getPref, setPref } from "../utils/prefs";
-import {
-  DEFAULT_BACKUP_MIRRORS_TEXT,
-  DEFAULT_SCIDB_ENDPOINT,
-} from "./mirrors";
+import { DEFAULT_BACKUP_MIRRORS_TEXT, DEFAULT_SCIDB_ENDPOINT } from "./mirrors";
 
 export async function registerPrefsScripts(_window: Window) {
   if (!addon.data.prefs) {

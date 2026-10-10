@@ -1,8 +1,3 @@
-import eslintConfig from "@zotero-plugin/eslint-config";
+import zotero from "@zotero-plugin/eslint-config";
 
-export default [
-  ...eslintConfig,
-  {
-    ignores: [".scaffold/**", "build/**", "dist/**", "node_modules/**"],
-  },
-];
+export default zotero();

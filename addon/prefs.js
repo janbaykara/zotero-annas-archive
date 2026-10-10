@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 pref("endpoint", "https://annas-archive.gl/scidb/");
 pref(
   "backupMirrors",

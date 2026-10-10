@@ -46,7 +46,9 @@
     "endOfLine": "lf",
     "overrides": [
       {
-        "files": ["*.xhtml"],
+        "files": [
+          "*.xhtml"
+        ],
         "options": {
           "htmlWhitespaceSensitivity": "css"
         }
