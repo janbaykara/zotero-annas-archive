@@ -14,6 +14,13 @@ async function onStartup() {
 
   const manager = AnnasArchiveManager.getInstance();
   manager.registerNotifier();
+  manager.registerPdfResolvers();
+
+  // Expose for MCP / console debugging
+  addon.api = {
+    updateItems: (items: Zotero.Item[]) => manager.updateItems(items),
+    getManager: () => manager,
+  };
 
   Zotero.PreferencePanes.register({
     pluginID: addon.data.config.addonID,
@@ -49,7 +56,9 @@ async function onMainWindowUnload(_win: Window): Promise<void> {
 }
 
 function onShutdown(): void {
-  AnnasArchiveManager.getInstance().unregisterNotifier();
+  const manager = AnnasArchiveManager.getInstance();
+  manager.unregisterPdfResolvers();
+  manager.unregisterNotifier();
   ztoolkit.unregisterAll();
   addon.data.alive = false;
   // @ts-expect-error - addon instance attached dynamically

@@ -8,7 +8,11 @@ declare namespace _ZoteroTypes {
   interface Prefs {
     PluginPrefsMap: {
       "endpoint": string;
+      "backupMirrors": string;
+      "autoDiscoverMirrors": boolean;
       "automaticPdfDownload": boolean;
+      "secretKey": string;
+      "mirrorsCache": string;
     };
   }
 }

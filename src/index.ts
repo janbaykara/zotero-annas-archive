@@ -12,6 +12,9 @@ if (!basicTool.getGlobal("Zotero")[config.addonInstance]) {
   });
   // @ts-expect-error - addon instance attached dynamically
   Zotero[config.addonInstance] = addon;
+  // Used by bootstrap.js / prefs onload (scaffold may also rewrite this)
+  // @ts-expect-error - internal scaffold hook
+  Zotero.__addonInstance__ = addon;
 }
 
 function defineGlobal(name: Parameters<BasicTool["getGlobal"]>[0]): void;
