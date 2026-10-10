@@ -1,6 +1,6 @@
 {
   "name": "zotero-annas-archive",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Download PDFs for Zotero items by DOI from Anna's Archive SciDB",
   "type": "module",
   "config": {
