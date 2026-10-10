@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JG8203/zotero-annas-archive.git"
+    "url": "git+https://github.com/janbaykara/zotero-annas-archive.git"
   },
   "author": "JG8203",
   "bugs": {
-    "url": "https://github.com/JG8203/zotero-annas-archive/issues"
+    "url": "https://github.com/janbaykara/zotero-annas-archive/issues"
   },
-  "homepage": "https://github.com/JG8203/zotero-annas-archive#readme",
+  "homepage": "https://github.com/janbaykara/zotero-annas-archive#readme",
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "start": "zotero-plugin serve",

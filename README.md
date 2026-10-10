@@ -8,7 +8,7 @@ This project is a Zotero 7+/10 rewrite of the legacy [zotero-scihub](https://git
 
 ## Install
 
-1. Download the latest `.xpi` from the [Releases](https://github.com/JG8203/zotero-annas-archive/releases) page  
+1. Download the latest `.xpi` from the [Releases](https://github.com/janbaykara/zotero-annas-archive/releases) page  
    (in Firefox, right-click → Save As).
 2. In Zotero: **Tools → Plugins**.
 3. Gear icon → **Install Plugin From File…** and choose the `.xpi`.
